@@ -37,6 +37,11 @@ run-example: ## Run basic usage example
 	@echo "$(BLUE)Running basic example...$(NC)"
 	python examples/basic_usage.py
 
+ui: ## Launch the web UI (Gradio)
+	@echo "$(BLUE)Launching Financial Agent Web UI...$(NC)"
+	@echo "$(GREEN)Open your browser to http://localhost:7860$(NC)"
+	python run_ui.py
+
 notebook: ## Start Jupyter notebook
 	@echo "$(BLUE)Starting Jupyter notebook...$(NC)"
 	jupyter notebook notebooks/exploration.ipynb
